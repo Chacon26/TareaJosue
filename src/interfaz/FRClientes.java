@@ -21,14 +21,17 @@ import negocio.UICliente;
  * @author M-01
  */
 public class FRClientes extends javax.swing.JFrame {
-
+ 
+   
+    
+    
     private UICliente ui;
     
     
     
     /** Creates new form FRClientes */
     public FRClientes() {
-        initComponents();
+       initComponents();
         ui = new UICliente();
         
     }
@@ -90,6 +93,11 @@ public class FRClientes extends javax.swing.JFrame {
         });
 
         BtnBuscar.setText("Buscar");
+        BtnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnBuscarActionPerformed(evt);
+            }
+        });
 
         BtnModificar.setText("Modificar");
 
@@ -241,6 +249,7 @@ public class FRClientes extends javax.swing.JFrame {
     private void BtnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAgregarActionPerformed
         // uiTODO add your handling code here:
         ui.agregar(this);
+        
         Cargador.CargaTabla(ui.Listar(), TblClientes);
         
        
@@ -270,6 +279,16 @@ public class FRClientes extends javax.swing.JFrame {
             ComboFP.setEnabled(true);
         }
     }//GEN-LAST:event_ChkEmpresaMouseClicked
+
+    private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
+        // TODO add your handling code here:
+        
+        BtnBuscar.getText();
+        
+        
+        
+        
+    }//GEN-LAST:event_BtnBuscarActionPerformed
 
     /**
      * @param args the command line arguments

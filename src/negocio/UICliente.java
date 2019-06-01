@@ -46,6 +46,13 @@ public class UICliente {
         return adm.Listar();
     }
     public void buscar(FRClientes ventana){}
+    int _id;
+    
+    
+    
+   
+    
+    
     public void modificar(FRClientes ventana){}
     public void eliminar(FRClientes ventana){}
     

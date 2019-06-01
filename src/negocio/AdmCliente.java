@@ -53,12 +53,12 @@ public class AdmCliente {
     
     }
 
-    public boolean agregar ( int id, String n, String c, String t, 
-                        int e, int contacto, FormaPago fp){
-        return true;
-    }
+    
 
-    public Cliente buscar(int id){
+    public Cliente buscar(int codigo){
+   
+        
+        
         return null;
     }
     
